@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxanium:wght@600;700;800&family=Poppins:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet">
+
+      <header class="header">
+
+        <div class="header-bottom skewBg" data-header>
+          <div class="container">
+    
+            <a href="index.html" class="logo">Gamics</a>
+    
+            <nav class="navbar" data-navbar>
+              <ul class="navbar-list">
+    
+                <li class="navbar-item">
+                  <a href="index.html" class="navbar-link skewBg" data-nav-link>Menú</a>
+                </li>
+    
+                <li class="navbar-item">
+                  <a href="live.html" class="navbar-link skewBg" data-nav-link>Live</a>
+                </li>
+    
+                <li class="navbar-item">
+                  <a href="novedades.html" class="navbar-link skewBg" data-nav-link>Novedades</a>
+                </li>
+    
+                <li class="navbar-item">
+                  <a href="tienda.html" class="navbar-link skewBg" data-nav-link>Tienda</a>
+                </li>
+    
+                <li class="navbar-item">
+                  <a href="blog.html" class="navbar-link skewBg" data-nav-link>Blog</a>
+                </li>
+    
+                <li class="navbar-item">
+                  <a href="#" class="navbar-link skewBg" id="scroll-to-bottom-button">Contactos</a> 
+                </li>
+    
+              </ul>
+            </nav>
+    
+            <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+              <ion-icon name="menu-outline" class="menu"></ion-icon>
+              <ion-icon name="close-outline" class="close"></ion-icon>
+            </button>
+    
+          </div>
+        </div>
+    
+      </header>
+</head>
+<body>
+    <a href="index.html"></a>
+    <style>
+        
+        .shop {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.shop .section-text { margin-block: 50px 60px; }
+
+.shop .has-scrollbar {
+  margin-inline: -15px;
+  padding-inline: 15px;
+  scroll-padding-inline-start: 15px;
+}
+
+.shop-card {
+  box-shadow: var(--shadow-4);
+  height: 100%;
+}
+
+.shop-card .card-content {
+  position: relative;
+  padding: 25px;
+  padding-block-start: 40px;
+}
+
+.shop-card .card-badge {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.shop-card .h3 { font-size: var(--fs-7); }
+
+.shop-card .card-title {
+  transition: var(--transition);
+  margin-block-end: 10px;
+}
+
+.shop-card .card-title:is(:hover, :focus) { color: var(--marigold); }
+
+.shop-card .card-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--marigold);
+}
+
+.shop-card .card-price {
+  font-family: var(--ff-oxanium);
+  font-weight: var(--fw-800);
+}
+
+.shop-card .card-btn {
+  color: inherit;
+  font-size: 18px;
+  padding: 7px;
+  border: 1px solid var(--english-violet);
+  border-radius: 4px;
+  transition: var(--transition);
+}
+
+.shop-card .card-btn:is(:hover, :focus) {
+  background-color: var(--marigold);
+  color: var(--xiketic);
+  border-color: var(--marigold);
+}
+    </style>
+    <li class="navbar-item">
+        <a href="index.html" class="navbar-link skewBg" data-nav-link>Menú</a>
+      </li>
+
+    <section class="section shop" id="shop" aria-label="shop"
+    style="background-image: url('./assets/images/shop-bg.jpg')">
+    <div class="container">
+
+      <h2 class="h2 section-title">
+        Esquina de Productos <span class="span">Gamer</span>
+      </h2>
+
+      <p class="section-text">
+        Compite con 100 jugadores en una isla remota para que el ganador se enfrente al problema conocido con ciertos aspectos
+        estratégicos.
+      </p>
+
+      <ul class="has-scrollbar">
+
+        <li class="scrollbar-item">
+          <div class="shop-card">
+
+            <figure class="card-banner img-holder" style="--width: 300; --height: 260;">
+              <img src="./assets/images/shop-img-1.jpg" width="300" height="260" loading="lazy"
+                alt="Women Black T-Shirt" class="img-cover">
+            </figure>
+
+            <div class="card-content">
+
+              <a href="#" class="card-badge skewBg">polera</a>
+
+              <h3 class="h3">
+                <a href="#" class="card-title">Mujer Negro Polera</a>
+              </h3>
+
+              <div class="card-wrapper">
+                <p class="card-price">$29.00</p>
+
+                <button class="card-btn">
+                  <ion-icon name="basket"></ion-icon>
+                </button>
+              </div>
+
+            </div>
+
+          </div>
+        </li>
+
+        <li class="scrollbar-item">
+          <div class="shop-card">
+
+            <figure class="card-banner img-holder" style="--width: 300; --height: 260;">
+              <img src="./assets/images/shop-img-2.jpg" width="300" height="260" loading="lazy"
+                alt="Gears 5 Xbox Controller" class="img-cover">
+            </figure>
+
+            <div class="card-content">
+
+              <a href="#" class="card-badge skewBg">x-box</a>
+
+              <h3 class="h3">
+                <a href="#" class="card-title">Gears 5 Control Xbox</a>
+              </h3>
+
+              <div class="card-wrapper">
+                <p class="card-price">$29.00</p>
+
+                <button class="card-btn">
+                  <ion-icon name="basket"></ion-icon>
+                </button>
+              </div>
+
+            </div>
+
+          </div>
+        </li>
+
+        <li class="scrollbar-item">
+          <div class="shop-card">
+
+            <figure class="card-banner img-holder" style="--width: 300; --height: 260;">
+              <img src="./assets/images/shop-img-3.jpg" width="300" height="260" loading="lazy"
+                alt="GeForce RTX 2070" class="img-cover">
+            </figure>
+
+            <div class="card-content">
+
+              <a href="#" class="card-badge skewBg">Gráficos</a>
+
+              <h3 class="h3">
+                <a href="#" class="card-title">GeForce RTX 2070</a>
+              </h3>
+
+              <div class="card-wrapper">
+                <p class="card-price">$29.00</p>
+
+                <button class="card-btn">
+                  <ion-icon name="basket"></ion-icon>
+                </button>
+              </div>
+
+            </div>
+
+          </div>
+        </li>
+
+        <li class="scrollbar-item">
+          <div class="shop-card">
+
+            <figure class="card-banner img-holder" style="--width: 300; --height: 260;">
+              <img src="./assets/images/shop-img-4.jpg" width="300" height="260" loading="lazy"
+                alt="Virtual Reality Smiled" class="img-cover">
+            </figure>
+
+            <div class="card-content">
+
+              <a href="#" class="card-badge skewBg">VR-Box</a>
+
+              <h3 class="h3">
+                <a href="#" class="card-title">Realidad Virtual Smiled</a>
+              </h3>
+
+              <div class="card-wrapper">
+                <p class="card-price">$29.00</p>
+
+                <button class="card-btn">
+                  <ion-icon name="basket"></ion-icon>
+                </button>
+              </div>
+
+            </div>
+
+          </div>
+        </li>
+
+      </ul>
+
+    </div>
+  </section>
+  <footer class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">Gamics</a>
+
+          <p class="footer-text">
+            Gamics marketplace es lo mejor que te pasará.
+          </p>
+
+          <ul class="contact-list">
+
+            <li class="contact-item">
+              <div class="contact-icon">
+                <ion-icon name="location"></ion-icon>
+              </div>
+
+              <address class="item-text">
+                Ubicación: Calle luca Marzino y América Oeste
+              </address>
+            </li>
+
+            <li class="contact-item">
+              <div class="contact-icon">
+                <ion-icon name="headset"></ion-icon>
+              </div>
+
+              <a href="tel:+241245654235" class="item-text">Cel: +591 764463983</a>
+            </li>
+
+            <li class="contact-item">
+              <div class="contact-icon">
+                <ion-icon name="mail-open"></ion-icon>
+              </div>
+
+              <a href="mailto:info@exemple.com" class="item-text">Email : Gamics@gmail.com</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Productos</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Gráficos (26)</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Fondos (11)</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Tipografías (9)</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Música (3)</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Fotografía (3)</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Necesitas ayuda?</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Términos y condiciones</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Política de privacidad</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Política de reembolso</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Afiliados</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Usar cases</a>
+          </li>
+
+        </ul>
+
+        <div class="footer-wrapper">
+
+          <div class="social-wrapper">
+
+            <p class="footer-list-title">Síguenos</p>
+
+            <ul class="social-list">
+
+              <li>
+                <a href="#" class="social-link" style="background-color: #3b5998">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link" style="background-color: #55acee">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link" style="background-color: #d71e18">
+                  <ion-icon name="logo-pinterest"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link" style="background-color: #1565c0">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <div class="footer-newsletter">
+
+            <p class="footer-list-title">Newsletter Registrarse</p>
+
+            <form action="" class="footer-newsletter">
+              <input type="email" name="email_address" aria-label="email" placeholder="Enter your email" required
+                class="email-field">
+
+              <button type="submit" class="footer-btn" aria-label="submit">
+                <ion-icon name="rocket"></ion-icon>
+              </button>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2023 Gamics. Todos los derechos reservados
+        </p>
+
+        <img src="./assets/images/footer-bottom-img.png" width="340" height="21" loading="lazy" alt=""
+          class="footer-bottom-img">
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+</body>
+
+<a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+  <ion-icon name="caret-up"></ion-icon>
+</a>
+<!-- 
+  - custom js link
+-->
+<script src="./assets/js/script.js" defer></script>
+
+<!-- 
+  - ionicon link
+-->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<script>
+
+document.getElementById("scroll-to-bottom-button").addEventListener("click", function() {
+document.body.scrollIntoView({ behavior: "smooth", block: "end" });
+
+});
+
+'use strict';
+
+const navbar = document.querySelector("[data-navbar]");
+const navbarLinks = document.querySelectorAll("[data-nav-link]");
+const navbarToggler = document.querySelector("[data-nav-toggler]");
+
+navbarToggler.addEventListener("click", function () {
+navbar.classList.toggle("active");
+this.classList.toggle("active");
+});
+
+for (let i = 0; i < navbarLinks.length; i++) {
+navbarLinks[i].addEventListener("click", function () {
+  navbar.classList.remove("active");
+  navbarToggler.classList.remove("active");
+});
+}
+
+
+
+/**
+* search toggle
+*/
+
+const searchTogglers = document.querySelectorAll("[data-search-toggler]");
+const searchBox = document.querySelector("[data-search-box]");
+
+for (let i = 0; i < searchTogglers.length; i++) {
+searchTogglers[i].addEventListener("click", function () {
+  searchBox.classList.toggle("active");
+});
+}
+
+
+
+/**
+* header
+*/
+
+const header = document.querySelector("[data-header]");
+const backTopBtn = document.querySelector("[data-back-top-btn]");
+
+window.addEventListener("scroll", function () {
+if (window.scrollY >= 200) {
+  header.classList.add("active");
+  backTopBtn.classList.add("active");
+} else {
+  header.classList.remove("active");
+  backTopBtn.classList.remove("active");
+}
+});
+
+</script>
+</body>
+
+</html>
+  </html>
+
+

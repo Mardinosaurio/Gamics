@@ -1,0 +1,392 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxanium:wght@600;700;800&family=Poppins:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet">
+
+      <header class="header">
+
+        <div class="header-bottom skewBg" data-header>
+          <div class="container">
+    
+            <a href="index.html" class="logo">Gamics</a>
+    
+            <nav class="navbar" data-navbar>
+              <ul class="navbar-list">
+    
+                <li class="navbar-item">
+                  <a href="index.html" class="navbar-link skewBg" data-nav-link>Menú</a>
+                </li>
+    
+                <li class="navbar-item">
+                  <a href="live.html" class="navbar-link skewBg" data-nav-link>Live</a>
+                </li>
+    
+                <li class="navbar-item">
+                  <a href="novedades.html" class="navbar-link skewBg" data-nav-link>Novedades</a>
+                </li>
+    
+                <li class="navbar-item">
+                  <a href="tienda.html" class="navbar-link skewBg" data-nav-link>Tienda</a>
+                </li>
+    
+                <li class="navbar-item">
+                  <a href="blog.html" class="navbar-link skewBg" data-nav-link>Blog</a>
+                </li>
+    
+                <li class="navbar-item">
+                  <a href="#" class="navbar-link skewBg" id="scroll-to-bottom-button">Contactos</a> 
+                </li>
+    
+              </ul>
+            </nav>
+    
+            <div class="header-actions">
+    
+              <button class="cart-btn" aria-label="cart">
+                <ion-icon name="cart"></ion-icon>
+    
+                <span class="cart-badge">0</span>
+              </button>
+    
+              <button class="search-btn" aria-label="open search" data-search-toggler>
+                <ion-icon name="search-outline"></ion-icon>
+              </button>
+    
+              <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+                <ion-icon name="menu-outline" class="menu"></ion-icon>
+                <ion-icon name="close-outline" class="close"></ion-icon>
+              </button>
+    
+            </div>
+    
+          </div>
+        </div>
+    
+      </header>
+</head>
+<body>
+    <a href="index.html"></a>
+    <style>
+        .hero-banner { display: none; }
+
+.hero {
+  --section-padding: 60px;
+  margin-block-start: 84px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  min-height: 100vh;
+  display: grid;
+  align-items: center;
+}
+
+.hero-subtitle {
+  color: var(--marigold);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-700);
+  text-transform: uppercase;
+}
+
+.hero-title { margin-block: 15px 12px; }
+
+.hero-text {
+  color: var(--light-gray-2);
+  margin-block-end: 45px;
+}
+    </style>
+     <section class="section hero" id="home" aria-label="home"
+     style="background-image: url('./assets/images/hero-bg.jpg')">
+     <div class="container">
+
+       <div class="hero-content">
+
+         <p class="hero-subtitle">Gaming Mundial</p>
+
+         <h1 class="h1 hero-title">
+           Crea <span class="span">Ordena</span> Partidas
+         </h1>
+
+         <p class="hero-text">
+           Encuentra tecnología o gente para proyectos digitales en el sector público y encuentra un especialista individual en búsqueda y desarrollo.
+           
+         </p>
+
+         <button class="btn skewBg">Leer más</button>
+
+       </div>
+
+       <figure class="hero-banner img-holder" style="--width: 700; --height: 700;">
+         <img src="./assets/images/hero-banner.png" width="700" height="700" alt="hero banner" class="w-100">
+       </figure>
+
+     </div>
+   </section>
+   <footer class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">Gamics</a>
+
+          <p class="footer-text">
+            Gamics marketplace es lo mejor que te pasará.
+          </p>
+
+          <ul class="contact-list">
+
+            <li class="contact-item">
+              <div class="contact-icon">
+                <ion-icon name="location"></ion-icon>
+              </div>
+
+              <address class="item-text">
+                Ubicación: Calle luca Marzino y América Oeste
+              </address>
+            </li>
+
+            <li class="contact-item">
+              <div class="contact-icon">
+                <ion-icon name="headset"></ion-icon>
+              </div>
+
+              <a href="tel:+241245654235" class="item-text">Cel: +591 764463983</a>
+            </li>
+
+            <li class="contact-item">
+              <div class="contact-icon">
+                <ion-icon name="mail-open"></ion-icon>
+              </div>
+
+              <a href="mailto:info@exemple.com" class="item-text">Email : Gamics@gmail.com</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Productos</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Gráficos (26)</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Fondos (11)</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Tipografías (9)</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Música (3)</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Fotografía (3)</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Necesitas ayuda?</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Términos y condiciones</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Política de privacidad</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Política de reembolso</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Afiliados</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Usar cases</a>
+          </li>
+
+        </ul>
+
+        <div class="footer-wrapper">
+
+          <div class="social-wrapper">
+
+            <p class="footer-list-title">Síguenos</p>
+
+            <ul class="social-list">
+
+              <li>
+                <a href="#" class="social-link" style="background-color: #3b5998">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link" style="background-color: #55acee">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link" style="background-color: #d71e18">
+                  <ion-icon name="logo-pinterest"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link" style="background-color: #1565c0">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <div class="footer-newsletter">
+
+            <p class="footer-list-title">Newsletter Registrarse</p>
+
+            <form action="" class="footer-newsletter">
+              <input type="email" name="email_address" aria-label="email" placeholder="Enter your email" required
+                class="email-field">
+
+              <button type="submit" class="footer-btn" aria-label="submit">
+                <ion-icon name="rocket"></ion-icon>
+              </button>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2023 Gamics. Todos los derechos reservados
+        </p>
+
+        <img src="./assets/images/footer-bottom-img.png" width="340" height="21" loading="lazy" alt=""
+          class="footer-bottom-img">
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+</body>
+
+<a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+  <ion-icon name="caret-up"></ion-icon>
+</a>
+<!-- 
+  - custom js link
+-->
+<script src="./assets/js/script.js" defer></script>
+
+<!-- 
+  - ionicon link
+-->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<script>
+
+document.getElementById("scroll-to-bottom-button").addEventListener("click", function() {
+document.body.scrollIntoView({ behavior: "smooth", block: "end" });
+
+});
+
+'use strict';
+
+const navbar = document.querySelector("[data-navbar]");
+const navbarLinks = document.querySelectorAll("[data-nav-link]");
+const navbarToggler = document.querySelector("[data-nav-toggler]");
+
+navbarToggler.addEventListener("click", function () {
+navbar.classList.toggle("active");
+this.classList.toggle("active");
+});
+
+for (let i = 0; i < navbarLinks.length; i++) {
+navbarLinks[i].addEventListener("click", function () {
+  navbar.classList.remove("active");
+  navbarToggler.classList.remove("active");
+});
+}
+
+
+
+/**
+* search toggle
+*/
+
+const searchTogglers = document.querySelectorAll("[data-search-toggler]");
+const searchBox = document.querySelector("[data-search-box]");
+
+for (let i = 0; i < searchTogglers.length; i++) {
+searchTogglers[i].addEventListener("click", function () {
+  searchBox.classList.toggle("active");
+});
+}
+
+
+
+/**
+* header
+*/
+
+const header = document.querySelector("[data-header]");
+const backTopBtn = document.querySelector("[data-back-top-btn]");
+
+window.addEventListener("scroll", function () {
+if (window.scrollY >= 200) {
+  header.classList.add("active");
+  backTopBtn.classList.add("active");
+} else {
+  header.classList.remove("active");
+  backTopBtn.classList.remove("active");
+}
+});
+
+</script>
+</body>
+
+</html>
+  </html>
+
+
